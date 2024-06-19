@@ -31,17 +31,7 @@ The KNeighborsClassifier is a machine learning algorithm used for classification
     ```sh
     pip install -r requirements.txt
     ```
-4. **Create virtual Environment**
-    ```sh
-    python -m venv venv
-    ```
-5. **Activate virtual Environment**
-    ```sh
-    venv\Scripts\activate #Windows
-    
-    source venv/bin/activate #macOS/Linux
-    ```
-6. **Run python file**
+4. **Run python file**
     ```sh
     python app.py
     ```
