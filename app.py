@@ -12,12 +12,21 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 app = Flask(__name__)
 
+@app.route('/disease', methods=['GET'] )
+def disease():
+    return render_template('disease.html')
 
+@app.route('/solution', methods=['Get'])
+def solution():
+    return render_template('solution.html')
 
 @app.route('/')
-def man():
-    return render_template('home.html')
+def main():
+    return render_template('index.html')
 
+@app.route('/home' ,methods=['GET'])
+def crop():
+    return render_template('home.html')
 
 @app.route('/predict', methods=['POST'])
 def home():
@@ -32,7 +41,8 @@ def home():
     pred = model.predict(arr)
     print(pred)
     res = label[int(pred)]
-    return render_template('after.html', data=res)
+    image_path = "/static/assets/"+res+".jpg"
+    return render_template('after.html', data=res, image_path=image_path)
 
 
 if __name__ == "__main__":

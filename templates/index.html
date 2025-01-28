@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem auto;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .card a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>Agri Solutions</nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Crop Prediction</h2>
+            <p>Get the best crop recommendations based on your soil and weather conditions.</p>
+            <a href="/home">Go to Crop Prediction</a>
+        </div>
+
+        <div class="card">
+            <h2>Plant Disease Identification</h2>
+            <p>Identify plant diseases quickly and accurately.</p>
+            <a href="/disease">Go to Plant Disease Identification</a>
+        </div>
+
+        <div class="card">
+            <h2>Disease Solutions</h2>
+            <p>Find the right solutions and treatments for plant diseases.</p>
+            <a href="/solution">Go to Disease Solutions</a>
+        </div>
+    </div>
+
+</body>
+</html>

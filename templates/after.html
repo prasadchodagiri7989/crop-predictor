@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Predictor</title>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dbtkas8kr/image/upload/v1687353822/WhatsApp_Image_2023-06-21_at_18.52.32_jp1hxn.jpg">
-
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
     <center>
@@ -14,7 +19,8 @@
         <div class="form">
             
             <h1 style="color:white;"> Your suggested crop is <span style="color:#5cb85c;">{{ data }}</span></h1>
-          </div>
+            <img src={{image_path}} alt="Sample Image">
+        </div>
         </center>       
 </body>
 </html>
